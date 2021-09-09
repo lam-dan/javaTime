@@ -11,9 +11,9 @@ public class Time {
 		LocalTime time = LocalTime.now(); 
 		int totalElapsed = (int) (time.toSecondOfDay() - totalSeconds);
 		int elapsedSeconds = totalElapsed % 60;
-        int elpasedHours = totalElapsed / 60;
-        int elpasedMinutes = elpasedHours % 60;
-        elpasedHours = elpasedHours / 60;
+		int elpasedHours = totalElapsed / 60;
+		int elpasedMinutes = elpasedHours % 60;
+		elpasedHours = elpasedHours / 60;
 		
 		System.out.printf("Number of seconds since midnight: %.0f\n", totalSeconds);
 		System.out.printf("Number of seconds remaining in the day: %.0f\n", remainingSeconds);
